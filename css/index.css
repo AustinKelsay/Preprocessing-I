@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  background-color: seashell;
 }
 html {
   margin-right: 20%;
@@ -156,8 +157,8 @@ header {
   margin-top: 5%;
   height: 15%;
   align-items: center;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid slateblue;
+  border-top: 1px solid slateblue;
   padding: 2%;
 }
 @media (max-width: 500px) {
@@ -186,7 +187,7 @@ header .buttons {
   font-family: 'Source Code Pro', monospace;
   font-size: 2rem;
   height: 4%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid slateblue;
 }
 main {
   height: 100%;
@@ -234,14 +235,14 @@ main .main-section {
   height: 94%;
   margin-top: 3%;
   display: flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid slateblue;
+  border-top: 1px solid slateblue;
   padding: 2%;
 }
 @media (max-width: 500px) {
   main .main-section {
     justify-content: flex-start;
+    flex-wrap: wrap;
     border-bottom: none;
     border-top: none;
     height: 100%;
@@ -250,7 +251,7 @@ main .main-section {
 main .skills {
   height: 100%;
   width: 40%;
-  border-right: 1px dotted black;
+  border-right: 1px dotted slateblue;
   display: flex;
 }
 @media (max-width: 500px) {
@@ -258,7 +259,7 @@ main .skills {
     border-right: none;
     height: 70%;
     width: 100%;
-    border-top: 1px solid black;
+    border-top: 1px solid slateblue;
   }
 }
 main .skills-header {
@@ -294,13 +295,13 @@ main .experience {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   main .experience {
     height: 50%;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    flex-wrap: wrap;
   }
 }
 main .experience-header {
@@ -311,7 +312,7 @@ main .experience-header {
   font-weight: 600;
 }
 main .experience-list {
-  margin-top: 1%;
+  margin-top: 0%;
   margin-left: 3%;
   font-family: 'Source Code Pro', monospace;
   font-size: 1.8rem;
@@ -351,7 +352,7 @@ footer .twitter {
   font-size: 2rem;
   font-family: 'Source Code Pro', monospace;
   margin-top: 1%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid slateblue;
   height: 15%;
   text-decoration: none;
   color: black;

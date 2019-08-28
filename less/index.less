@@ -57,6 +57,7 @@ table {
 
 html, body {
 	height: 100%;
+	background-color: seashell;
 }
 
 html{
@@ -86,9 +87,11 @@ header {
 	margin-top: 5%;
 	height: 15%;
 	align-items: center;
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
+	border-bottom: 1px solid slateblue;
+	border-top: 1px solid slateblue;
 	padding: 2%;
+
+	
 
 	@media(max-width: 500px){
 		justify-content: center;
@@ -116,7 +119,7 @@ header {
 			font-family: @font-family;
 			font-size: 2rem;
 			height: 4%;
-			border-bottom: 1px solid black; }
+			border-bottom: 1px solid slateblue; }
 
 }
 
@@ -167,13 +170,13 @@ main{
 						height: 94%;
 						margin-top: 3%;
 						display: flex;
-						flex-wrap: wrap;
-						border-bottom: 1px solid black;
-						border-top: 1px solid black;
+						border-bottom: 1px solid slateblue;
+						border-top: 1px solid slateblue;
 						padding: 2%; 
 					
 						@media(max-width: 500px){
 							justify-content: flex-start;
+							flex-wrap: wrap;
 							border-bottom: none;
 							border-top: none;
 							height: 100%;
@@ -184,14 +187,14 @@ main{
 						.skills {
 						  height: 100%;
 						  width: 40%;
-						  border-right: 1px dotted black;
+						  border-right: 1px dotted slateblue;
 						  display: flex;
 						
 						  @media(max-width: 500px){
 							  border-right: none;
 							  height: 70%;
 							  width: 100%;
-							  border-top: 1px solid black;
+							  border-top: 1px solid slateblue;
 						  }
 						}
 
@@ -230,12 +233,12 @@ main{
 										height: 100%;
 										width: 100%;
 										display: flex; 
-										flex-wrap: wrap;
 									
 										@media(max-width: 500px){
 											height: 50%;
 											border-bottom: 1px solid black;
 											border-top: 1px solid black;
+											flex-wrap: wrap;
 
 										}
 									}
@@ -248,7 +251,7 @@ main{
 											font-weight: @font-weight }
 
 											.experience-list {
-												margin-top: 1%;
+												margin-top: 0%;
 												margin-left: 3%;
 												.content-text; 
 											
@@ -272,6 +275,7 @@ margin-top: 3%;
 display: flex;
 justify-content: space-between;
 
+
 @media(max-width: 500px){
 	height: 25%;
 	align-items: flex-end;
@@ -291,7 +295,7 @@ justify-content: space-between;
 			font-size: 2rem;
 			font-family: @font-family;
 			margin-top: 1%;
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid slateblue;
 			height: 15%;
 			text-decoration: none;
 			color: black; }
