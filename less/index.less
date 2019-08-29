@@ -4,6 +4,8 @@
    License: none (public domain)
 */
 
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +56,251 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: seashell;
 }
+
+html{
+	margin-right: 20%;
+	margin-left: 20%;
+	font-size: 62.5%;
+
+	@media(max-width: 500px){
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+}
+
+@font-family: 'Source Code Pro', monospace;
+@font-weight: 600;
+
+.content-text{
+	font-family: @font-family;
+	font-size: 1.8rem;
+}
+
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 5%;
+	height: 15%;
+	align-items: center;
+	border-bottom: 1px solid slateblue;
+	border-top: 1px solid slateblue;
+	padding: 2%;
+
+	
+
+	@media(max-width: 500px){
+		justify-content: center;
+		height: 20%;
+	}
+	
+	h1{
+		font-size: 3rem; }
+
+
+	nav {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media(max-width: 500px){
+			flex-direction: column;
+		}
+	 }
+
+		.buttons{
+			text-decoration: none;
+			color: black;
+			font-family: @font-family;
+			font-size: 2rem;
+			height: 4%;
+			border-bottom: 1px solid slateblue; }
+
+}
+
+
+	
+main{
+	height: 100%;
+	width: 100%;
+
+ .main-top {
+	display: flex;
+	height: 30%;
+	margin-top: 2%;
+
+	@media(max-width: 500px){
+		height: 55%;
+	}
+}
+
+	img {
+		width: 20%;
+		height: 100%;
+	
+		@media(max-width: 500px){
+			display: none;
+		}
+	}
+
+		.about-section{
+			width: 100%;
+			height: 100%;
+			display: flex; }
+		
+			.about{
+				font-size: 2rem;
+				font-family: @font-family;
+				margin: 2%;
+				width: 20%;
+				font-weight: @font-weight; }
+
+				.about-description {
+					.content-text;
+					width: 100%;
+					margin-top: 3%;
+					margin-left: 1%; }
+
+					.main-section {
+						height: 94%;
+						margin-top: 3%;
+						display: flex;
+						border-bottom: 1px solid slateblue;
+						border-top: 1px solid slateblue;
+						padding: 2%; 
+					
+						@media(max-width: 500px){
+							justify-content: flex-start;
+							flex-wrap: wrap;
+							border-bottom: none;
+							border-top: none;
+							height: 100%;
+
+						}
+					}
+					
+						.skills {
+						  height: 100%;
+						  width: 40%;
+						  border-right: 1px dotted slateblue;
+						  display: flex;
+						
+						  @media(max-width: 500px){
+							  border-right: none;
+							  height: 70%;
+							  width: 100%;
+							  border-top: 1px solid slateblue;
+						  }
+						}
+
+						  .skills-header{
+							font-family: @font-family;
+							font-size: 2rem;
+							margin: 5%;
+							font-weight: @font-weight;
+
+							@media(max-width: 500px){
+								height: 10%;
+							}
+
+						   }
+					
+					
+							.skills-list{
+								margin: 4%; 
+							
+								@media(max-width: 500px){
+									font-size: 1rem;
+									
+								}
+							}
+
+								.skills-list li{
+									margin-top: 5%;
+									.content-text; 
+								
+									@media(max-width: 500px){
+										font-size: 1.5rem;
+									}
+								}
+
+									.experience {
+										height: 100%;
+										width: 100%;
+										display: flex; 
+									
+										@media(max-width: 500px){
+											height: 50%;
+											border-bottom: 1px solid black;
+											border-top: 1px solid black;
+											flex-wrap: wrap;
+
+										}
+									}
+									
+										.experience-header {
+											font-family: @font-family;
+											font-size: 2rem;
+											margin-left: 2%;
+											margin-top: 2%;
+											font-weight: @font-weight }
+
+											.experience-list {
+												margin-top: 0%;
+												margin-left: 3%;
+												.content-text; 
+											
+												@media(max-width: 500px){
+													font-size: 1.3rem;
+												}
+											
+											}
+											
+											
+												.experience-list li {
+													margin-top: 3%; }
+										
+}
+
+
+
+footer {
+height: 15%;
+margin-top: 3%;
+display: flex;
+justify-content: space-between;
+
+
+@media(max-width: 500px){
+	height: 25%;
+	align-items: flex-end;
+	margin-bottom: 5%;
+}
+
+  h3{
+	font-size: 3rem;
+	font-family: @font-family; }
+
+		.footer-nav{
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly; }
+
+			.email, .twitter {
+			font-size: 2rem;
+			font-family: @font-family;
+			margin-top: 1%;
+			border-bottom: 1px solid slateblue;
+			height: 15%;
+			text-decoration: none;
+			color: black; }
+
+
+}
+
 
